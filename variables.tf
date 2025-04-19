@@ -7,19 +7,19 @@ variable "credentials" {
 }
 
 variable "region-west" {
-  default = "us-west1"
+  default = "europe-southwest1"
 }
 
 variable "region-east" {
-  default = "us-east1"
+  default = "europe-west2"
 }
 
 variable "zone_west1" {
-  default = "us-west1-a"
+  default = "europe-southwest1-a"
 }
 
 variable "zone_east1" {
-  default = "us-east1-b"
+  default = "europe-west2-a"
 }
 
 variable "ip-cidr-range-west" {
@@ -33,7 +33,7 @@ variable "ip-cidr-range-east" {
 }
 
 variable "machine_type" {
-  default = "f1-micro"
+  default = "e2-micro"
 }
 
 variable "image" {

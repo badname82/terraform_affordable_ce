@@ -1,2 +1,6 @@
-#json files
+#folders to ignore
+.terraform/
+
+#file extensions to ignore
 *.json
+*.hcl

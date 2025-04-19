@@ -1,8 +1,8 @@
 locals {
   compute-engines = {
-    "compute-engine-west"  = { region = "us-west1", zone = "us-west1-a", subnet = google_compute_subnetwork.subnet-west1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-west" },
-    "compute-engine-east"  = { region = "us-east1", zone = "us-east1-b", subnet = google_compute_subnetwork.subnet-east1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-east" },
-    "compute-engine-west1" = { region = "us-west1", zone = "us-west1-a", subnet = google_compute_subnetwork.subnet-west1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-west1" }
+    "compute-engine-esw" = { region = "europe-southwest1", zone = "europe-southwest1-a", subnet = google_compute_subnetwork.subnet-west1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-west" },
+    "compute-engine-ew"  = { region = "europe-west2", zone = "europe-west2-a", subnet = google_compute_subnetwork.subnet-east1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-east" },
+    "compute-engine-esw" = { region = "europe-southwest1", zone = "europe-southwest1-a", subnet = google_compute_subnetwork.subnet-west1.name, machine_type = var.machine_type, image = "debian-cloud/debian-11", static_ip_name = "static-ip-west1" }
   }
 }
 

@@ -5,7 +5,11 @@ terraform {
       version = ">=4.30.0"
     }
   }
-
+  backend "gcs" {
+    bucket      = "tf-state-affordable-compute-engine-dev"
+    prefix      = ""
+    credentials = "C:\\terraform\\keys\\affordable-compute-engine-dev-5a8c3613c314.json"
+  }
 }
 provider "google" {
   credentials = var.credentials
